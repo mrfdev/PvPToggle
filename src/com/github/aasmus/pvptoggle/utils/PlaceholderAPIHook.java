@@ -18,11 +18,19 @@ public class PlaceholderAPIHook extends PlaceholderExpansion {
 	public String onPlaceholderRequest(Player player, String identifier) {
 		if(player == null) { return ""; }
 		
-		//Placeholder: %pvptoggle_positive_rep%
+		//Placeholder: %pvptoggle_pvp_state%
 		if(identifier.equals("pvp_state")) {
 			return PvPToggle.instance.players.get(player.getUniqueId()) ? "&aOff" : "&cOn";
 		}
-		
+		//Placeholder: %pvptoggle_pvp_symbol%
+		if(identifier.equals("pvp_symbol")) {
+			return PvpToggle.instance.players.get(player.getUniqueId()) ? "" : "&6^";
+		}
+		//Placeholder: %pvptoggle_pvp_state_clean%
+		if(identifier.equals("pvp_state_clean")) {
+			return PvpToggle.instance.players.get(player.getUniqueId()) ? "false" : "true";
+		}
+
 		return null;
 	}
 	
