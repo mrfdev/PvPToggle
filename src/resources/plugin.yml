@@ -6,9 +6,9 @@ api-version: 1.13
 author: aasmus (with modifications by the Red Fusion Team)
 description: Plugin that allows players to toggle PvP state
 commands:
-  pvp:
+  _pvp:
     description: used to change PvP state.
-    usage: /pvp
+    usage: /_pvp
     permission: pvptoggle.allow
     permission-message: You don't have the pvptoggle.allow permission node.
 permissions:

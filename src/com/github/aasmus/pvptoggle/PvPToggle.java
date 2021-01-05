@@ -47,7 +47,7 @@ public class PvPToggle extends JavaPlugin implements Listener {
 		Bukkit.getPluginManager().registerEvents(new PvP(), this);
 		Bukkit.getPluginManager().registerEvents(new PlayerChangeWorld(), this);
 		//register command
-		this.getCommand("pvp").setExecutor(new PvPCommand());
+		this.getCommand("_pvp").setExecutor(new PvPCommand());
 		
 		blockedWorlds = config.getStringList("SETTINGS.BLOCKED_WORLDS");
 		
