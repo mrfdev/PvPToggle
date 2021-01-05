@@ -13,7 +13,7 @@ import com.nametagedit.plugin.NametagEdit;
 
 public class Util {
 	
-	private static float radius = .75f;
+	private static float radius = .5f;
 	
 	public static boolean getPlayerState(UUID uuid){
 		Boolean result = PvPToggle.instance.players.get(uuid);
