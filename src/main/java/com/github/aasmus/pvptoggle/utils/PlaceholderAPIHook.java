@@ -24,11 +24,11 @@ public class PlaceholderAPIHook extends PlaceholderExpansion {
 		}
 		//Placeholder: %pvptoggle_pvp_symbol%
 		if(identifier.equals("pvp_symbol")) {
-			return PvpToggle.instance.players.get(player.getUniqueId()) ? "" : "&6^";
+			return PvPToggle.instance.players.get(player.getUniqueId()) ? "" : "&6^";
 		}
 		//Placeholder: %pvptoggle_pvp_state_clean%
 		if(identifier.equals("pvp_state_clean")) {
-			return PvpToggle.instance.players.get(player.getUniqueId()) ? "false" : "true";
+			return PvPToggle.instance.players.get(player.getUniqueId()) ? "false" : "true";
 		}
 
 		return null;
